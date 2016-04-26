@@ -1,6 +1,14 @@
 # pepipost-mandrill-sdk-php
 Modified Mandrill SDK working via Pepipost API
 
+# Install
+```
+curl -s http://getcomposer.org/installer | php
+```
+```
+php composer.phar require mandrill/mandrill
+```
+
 # Usage:
 ```php
 require 'vendor/autoload.php';
