@@ -6,11 +6,12 @@ Modified Mandrill SDK working via Pepipost API
 curl -s http://getcomposer.org/installer | php
 ```
 ```
-php composer.phar require pepipost/pepipost-mandrill-sdk-php
+php composer.phar require pepipost/pepipost-mandrill-sdk-php:dev-master
 ```
 
 # Usage:
 ```php
+<?php
 require 'vendor/autoload.php';
 $mandrill = new Mandrill('yourPepipostsecretkey'); // PEPIPOST API KEY HERE
 $message = array(
@@ -50,4 +51,20 @@ catch(Mandrill_Error $e) {
     // A mandrill error occurred: Mandrill_Unknown_Subaccount - No subaccount exists with the id 'customer-123'
     throw $e;
 }
+
+print_r($result);
+//Example Output
+//Array
+//(
+//    [0] => Array
+//        (
+//            [email] => recipients@example.com
+//            [_id] => 
+//            [status] => queued
+//       )
+//
+//)
+//
+
+
 ```
