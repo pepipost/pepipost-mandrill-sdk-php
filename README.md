@@ -6,7 +6,7 @@ Modified Mandrill SDK working via Pepipost API
 curl -s http://getcomposer.org/installer | php
 ```
 ```
-php composer.phar require mandrill/mandrill
+php composer.phar require pepipost/pepipost-mandrill-sdk-php
 ```
 
 # Usage:
