@@ -19,7 +19,7 @@ $message = array(
         'from_name' => 'sender name',
         'from_email' => 'from@example.com',
         'html' => '<p>hi [% NAME %], Pepipost Mandrill Migration API Testing Test</p>',//file_get_contents($template_files[$j]),
-        'recipients_cc' => 'recipient1@domain.com',
+        'recipients_cc' => array('recipient1@domain.com','recipient2@example.com'),
         'bcc' => 'bcc@domain.com',
         'to' => array(
             array(
