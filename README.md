@@ -19,6 +19,8 @@ $message = array(
         'from_name' => 'sender name',
         'from_email' => 'from@example.com',
         'html' => '<p>hi [% NAME %], Pepipost Mandrill Migration API Testing Test</p>',//file_get_contents($template_files[$j]),
+        'recipients_cc' => 'recipient1@domain.com',
+        'bcc' => 'bcc@domain.com',
         'to' => array(
             array(
                 "email" => 'recipient@example.com',
@@ -53,18 +55,3 @@ catch(Mandrill_Error $e) {
 }
 
 print_r($result);
-//Example Output
-//Array
-//(
-//    [0] => Array
-//        (
-//            [email] => recipients@example.com
-//            [_id] => 
-//            [status] => queued
-//       )
-//
-//)
-//
-
-
-```
